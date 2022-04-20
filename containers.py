@@ -20,3 +20,14 @@ food = ('cheese', 'macaroni', 'bacon')
 for position in range(len(food)-1,0,-1):
     print(food[position])
 
+# Exercise 4:
+# Create a dictionary named home_town containing the keys of city, state and population.
+# Print a string with this format:
+# "I was born in city, state - population of population"
+home_town = {
+    'city': 'Westminster',
+    'state': 'CA',
+    'population': 91000
+}
+
+print(f"I was born in {home_town['city']},{home_town['state']} - population of {home_town['population']}")
