@@ -31,3 +31,20 @@ home_town = {
 }
 
 print(f"I was born in {home_town['city']},{home_town['state']} - population of {home_town['population']}")
+
+# Exercise 5:
+# Iterate over the key: value pairs in home_town and print a string for each item
+for key,val in home_town.items():
+    print(f"{key} = {val}")
+
+# Exercise 6:
+# Create an empty list named cohort.
+# Using a for loop, add one dictionary to the cohort list for each student name
+# Iterate over cohort printing out each element.
+cohort = []
+for idx,student in enumerate(students): 
+    cohort.append({'student': student, 'fav_food': food[idx]})
+    print(idx,student)
+
+for student in cohort:
+    print(student)
