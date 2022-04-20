@@ -48,3 +48,17 @@ for idx,student in enumerate(students):
 
 for student in cohort:
     print(student)
+
+# Exercise 7
+# Using the list of students and list comprehension, assign to a variable named awesome_students a new list
+# Iterate over awesome_students printing out each string.
+awesome_students = [student for student in students]
+
+for student in awesome_students:
+    print(f'{student} is awesome!')
+
+# Exercise 8
+# Using the tuple foods and list comprehension within a for loop, print each food string that contains the letter a.
+a_foods = [food for food in food if 'a' in food]
+for food in a_foods:
+    print(food)
