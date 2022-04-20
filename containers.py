@@ -59,6 +59,6 @@ for student in awesome_students:
 
 # Exercise 8
 # Using the tuple foods and list comprehension within a for loop, print each food string that contains the letter a.
-a_foods = [food for food in food if 'a' in food]
-for food in a_foods:
-    print(food)
+a_foods = [item for item in food if 'a' in item]
+for item in a_foods:
+    print(item)
